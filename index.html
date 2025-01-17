@@ -4,6 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mood Matcher Game</title>
+  <style>
+    body {
+      background-image: url('ale.jpg'); /* Replace with your desired image URL */
+      width: 100vw; /* Full viewport width */
+      height: 100vh; /* Full viewport height */
+      background-size: cover; /* Cover the entire screen */
+      background-repeat: no-repeat;
+      background-position: center; /* Center the image */
+      font-family: Arial, sans-serif;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+      margin: 0; /* Remove default margins */
+    }
+  </style>
 </head>
 <body>
   <script>
@@ -20,7 +34,7 @@
 
     // Step 2: Ask how the user is feeling
     const feeling = prompt(
-      `How are you feeling right now? Choose one:
+      `How are you feeling right now? Type a number:
       1. Angry
       2. Happy
       3. Sad
@@ -35,6 +49,7 @@
         alert(`Angry, ${userName}? Take a deep breath. Count to ten. Or maybe go punch a pillow.`);
         alert("Remember, revenge is sweet, but so is chocolate.");
         break;
+
       case "2":
       
         alert(`Happy? That's awesome, ${userName}! Spread those good vibes like peanut butter on toast.`);
